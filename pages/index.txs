@@ -1,0 +1,9 @@
+import dynamic from "next/dynamic";
+
+const RozrazovaciTest = dynamic(() => import("@/components/RozrazovaciTest"), {
+  ssr: false,
+});
+
+export default function Home() {
+  return <RozrazovaciTest />;
+}
